@@ -1,0 +1,4 @@
+@main {
+    one: int = const 1;
+    x: ptr<bool> = alloc one;
+}

@@ -1,0 +1,9 @@
+@foo : ptr<bool> {
+    one: int = const 1;
+    x: ptr<bool> = alloc one;
+    ret x;
+}
+
+@main {
+    y: ptr<bool> = call @foo;
+}
